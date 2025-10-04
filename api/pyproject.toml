@@ -1,0 +1,20 @@
+[project]
+name = "2025-10-04-cake-fair-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.118.0",
+    "google-cloud-logging>=3.12.1",
+    "google-cloud-storage>=3.4.0",
+    "httpx>=0.28.1",
+    "nanoid>=2.0.0",
+    "pydantic>=2.11.9",
+    "pydantic-settings>=2.11.0",
+    "pymongo>=4.15.1",
+    "uvicorn>=0.37.0",
+]
+
+[tool.uv]
+package = false

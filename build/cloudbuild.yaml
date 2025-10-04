@@ -1,0 +1,32 @@
+steps:
+  # 原本的程式碼
+  # Pull the previous container image and build the new one
+  - name: "gcr.io/cloud-builders/docker"
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        ./build/script/image.sh agent api build client
+    dir: "."
+    env:
+      - "SHORT_SHA=$SHORT_SHA"
+      - "PROJECT_ID=$PROJECT_ID"
+      - "REPO_NAME=$REPO_NAME"
+      - "LOCATION=$LOCATION"
+      - "BRANCH_NAME=$BRANCH_NAME"
+      - "STAGE=$_STAGE"
+  # Push the new container image to GCR
+  - name: "$LOCATION-docker.pkg.dev/$PROJECT_ID/cake-fair/build/$_STAGE:latest"
+    entrypoint: "uv"
+    dir: "./build"
+    args: ["run", "-m", "app.main"]
+    env:
+      - "SHORT_SHA=$SHORT_SHA"
+      - "PROJECT_ID=$PROJECT_ID"
+      - "REPO_NAME=$REPO_NAME"
+      - "LOCATION=$LOCATION"
+      - "BRANCH_NAME=$BRANCH_NAME"
+      - "STAGE=$_STAGE"
+      - "UV_LINK_MODE=copy"
+options:
+  logging: CLOUD_LOGGING_ONLY

@@ -1,0 +1,18 @@
+[project]
+name = "2025-10-04-cake-fair-client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-cloud-logging>=3.12.1",
+    "openai>=1.109.1",
+    "pydantic-settings>=2.11.0",
+    "streamlit>=1.50.0",
+    "streamlit-cookies-controller>=0.0.4",
+    "streamlit-geolocation>=0.0.10",
+    "streamlit-js>=1.0.8",
+]
+
+[tool.uv]
+package = false

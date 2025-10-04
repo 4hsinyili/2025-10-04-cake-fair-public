@@ -1,0 +1,19 @@
+[project]
+name = "2025-10-04-cake-fair-build"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11, <3.12"
+dependencies = [
+    "google-cloud-run",
+    "google-cloud-build",
+    "google-cloud-artifact-registry",
+    "google-cloud-secret-manager",
+    "google-cloud-storage",
+    "google-cloud-logging",
+    "nanoid>=2.0.0",
+    "pydantic-settings>=2.11.0",
+]
+
+[tool.uv]
+package = false

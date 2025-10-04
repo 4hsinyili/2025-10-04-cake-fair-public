@@ -1,0 +1,8 @@
+*.env
+*.json
+*.html
+*.pyc
+*.DS_Store
+*.streamlit
+*.code-workspace
+*.egg-info

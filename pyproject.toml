@@ -1,0 +1,24 @@
+[project]
+name = "2025-10-04-cake-fair"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "2025-10-04-cake-fair-adk",
+    "2025-10-04-cake-fair-api",
+    "2025-10-04-cake-fair-build",
+    "2025-10-04-cake-fair-client",
+    "2025-10-04-cake-fair-crawler",
+]
+
+[tool.uv]
+package = false
+
+
+[tool.uv.sources]
+2025-10-04-cake-fair-adk = { path = "adk" }
+2025-10-04-cake-fair-api = { path = "api" }
+2025-10-04-cake-fair-build = { path = "build" }
+2025-10-04-cake-fair-client = { path = "client" }
+2025-10-04-cake-fair-crawler = { path = "crawler" }
