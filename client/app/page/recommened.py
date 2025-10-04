@@ -426,13 +426,16 @@ def _page_footer():
             - 資料庫：使用 MongoDB Atlas 儲存飲料與店家資料
             - 自動化部署：使用 Cloud Build 持續部署
 
+            ### Repository
+            https://github.com/4hsinyili/2025-10-04-cake-fair-public
+            
             ### Usage
             請點選頁面標題旁的「?」圖示以查看使用說明
 
             ### About Me
             Hsin Yi Li&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;李心毅&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;4hsinyili@gmail.com\n
             Data Engineer\n
-            [GitHub Profile](https://github.com/4hsinyili)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[Cake Profile](https://www.cake.me/me/4hsinyili)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[LinkedInProfile](https://www.linkedin.com/in/4hsinyili/)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[聯絡信箱](mailto:4hsinyili@gmail.com)
+            [GitHub Profile](https://github.com/4hsinyili)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[Cake Profile](https://www.cake.me/me/4hsinyili)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[LinkedInProfile](https://www.linkedin.com/in/4hsinyili/)
             """
         )
 
